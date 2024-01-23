@@ -22,7 +22,7 @@ This tool is intended for educational purposes only. Unauthorized access and dat
 2. Navigate to the directory where the script is located.
 3. Run the script using the following command:
     ```bash
-    node your_script_name.js
+    index.js
     ```
 
 ## Disclaimer
