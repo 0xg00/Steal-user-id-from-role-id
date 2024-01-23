@@ -3,7 +3,7 @@ const client = new Client();
 const config = require('./config.json'); 
 
 client.on('ready', async () => {
-    console.log(`Selfbot está listo como: ${client.user.tag}`);
+    console.log(`Selfbot on: ${client.user.tag}`);
     const guild = await client.guilds.fetch(config.guildId);
 
     guild.members.fetch().then(members => {
@@ -11,7 +11,7 @@ client.on('ready', async () => {
             config.roleIds.forEach(roleId => {
                 if(member.roles.cache.has(roleId)) {
                     const role = guild.roles.cache.get(roleId);
-                    console.log(`ID del usuario con el rol ${role.name}: ${member.user.id}`);
+                    console.log(`ID user for the rol: ${role.name}: ${member.user.id}`);
                 }
             });
         });
